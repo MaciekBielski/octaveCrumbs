@@ -1,0 +1,7 @@
+" Octave and gnuplot syntax
+augroup filetypedetect
+   au! BufRead,BufNewFile *.m,*.oct set filetype=octave
+   au! BufRead,BufNewFile *.plt,*.gnuplot,*.gpi set filetype=gnuplot
+augroup END 
+
+nmap <F10> :!./%<CR>
